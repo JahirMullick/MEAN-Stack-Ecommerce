@@ -16,9 +16,14 @@ const router = express.Router();
 
 router.route("/products").get(getAllProducts);
 
-router
-    .route("/admin/products")
-    .get(isAuthenticatedUser, authorizeRoles("admin"), getAdminProducts);
+
+// router.route("/product/new").post(isAuthenticatedUser, authorizeRoles("admin"), createProduct); //TODO: This is extra code it need to delete
+// router.route("/product/:id").put(isAuthenticatedUser, authorizeRoles("admin"), updateProduct).delete(isAuthenticatedUser, authorizeRoles("admin"), deleteProduct).get(isAuthenticatedUser, authorizeRoles("admin"), getProductDetails) //TODO: This is extra code it need to delete
+
+
+// router
+//     .route("/admin/products")
+//     .get(isAuthenticatedUser, authorizeRoles("admin"), getAdminProducts);
 
 router
     .route("/admin/product/new")

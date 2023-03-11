@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const productSchema = mongoose.Schema({
+const productSchema = new mongoose.Schema({
     name: {
         type: String,
         required: [true, "Please Enter product Name"],
@@ -29,6 +29,12 @@ const productSchema = mongoose.Schema({
                 type: String,
                 required: true,
             },
+
+            // // TODO Additional code...
+            // name: {
+            //     type: String,
+            //     required: [true, "Uploaded file must have a name"],
+            // },
         },
     ],
     category: {
