@@ -18,7 +18,7 @@ process.on("uncaughtException", (err) => {
 
 dotenv.config({ path: "backend/config/config.env" });
 
-// // Connecting to database
+//TODO:- Connecting to database
 connectDatabase();
 
 // cloudinary.config({
